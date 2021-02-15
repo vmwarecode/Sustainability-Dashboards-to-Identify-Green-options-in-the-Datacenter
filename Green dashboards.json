@@ -1,0 +1,844 @@
+{
+   "dashboards": [
+      {
+         "autoswitchEnabled": false,
+         "columnCount": 1,
+         "columnProportion": "1",
+         "creationTime": 1613337224621,
+         "dashboardNavigations": {},
+         "description": "",
+         "disabled": false,
+         "gridsterMaxColumns": 12,
+         "hidden": false,
+         "homeTab": false,
+         "id": "76c77f4e-88f9-4607-89ba-4d041e284428",
+         "importAttempts": 0,
+         "importComplete": true,
+         "lastUpdateTime": 1613358873396,
+         "lastUpdateUserId": "f36c815d-9b04-439e-ad10-5e651353daff",
+         "locked": false,
+         "name": "Sustainability/Green datacenter Dashboard",
+         "namePath": "Sustainability",
+         "rank": 0,
+         "shared": false,
+         "states": [],
+         "temporary": false,
+         "userId": "f36c815d-9b04-439e-ad10-5e651353daff",
+         "widgetInteractions": [],
+         "widgets": [
+            {
+               "collapsed": false,
+               "config": {
+                  "boxColumns": 2,
+                  "boxHeight": null,
+                  "customFilter": {
+                     "excludedResources": null,
+                     "filter": [],
+                     "includedResources": null
+                  },
+                  "depth": 1,
+                  "labelSize": 12,
+                  "maxCellCount": 100,
+                  "metric": {
+                     "mode": "resourceKind",
+                     "resourceKindMetrics": [
+                        {
+                           "colorMethod": 0,
+                           "handleOldColoring": false,
+                           "id": "extModel42524-1",
+                           "isStringMetric": false,
+                           "label": "Count of Physical Servers",
+                           "link": "",
+                           "metricKey": "summary|number_running_vms",
+                           "metricName": "Summary|Number of Running VMs",
+                           "metricUnitId": null,
+                           "orangeBound": 70,
+                           "redBound": 90,
+                           "resourceKindId": "resourceKind:id:0_::_",
+                           "resourceKindName": "vSphere World",
+                           "unit": "",
+                           "yellowBound": 50
+                        },
+                        {
+                           "colorMethod": 0,
+                           "handleOldColoring": false,
+                           "id": "extModel42524-2",
+                           "isStringMetric": false,
+                           "label": "Total Power usage by servers",
+                           "link": "",
+                           "metricKey": "Super Metric|sm_6f2ca6b4-6952-4a66-93d5-35f8d78d9237",
+                           "metricName": "Super Metrics|Sus-Power-without-VMW",
+                           "metricUnitId": "KW",
+                           "orangeBound": 70,
+                           "redBound": 90,
+                           "resourceKindId": "resourceKind:id:0_::_",
+                           "resourceKindName": "vSphere World",
+                           "unit": "KW",
+                           "yellowBound": 50
+                        }
+                     ],
+                     "resourceMetrics": [],
+                     "subMode": "resourceKindAll"
+                  },
+                  "mode": {"layoutMode": "fixedView"},
+                  "oldMetricValues": false,
+                  "periodLength": null,
+                  "refreshContent": {"refreshContent": true},
+                  "refreshInterval": 300,
+                  "relationshipMode": {"relationshipMode": 0},
+                  "resInteractionMode": null,
+                  "resource": [],
+                  "roundDecimals": null,
+                  "selfProvider": {"selfProvider": true},
+                  "showDT": {"showDT": false},
+                  "showMetricName": {"showMetricName": true},
+                  "showMetricUnit": {"showMetricUnit": true},
+                  "showResourceName": {"showResourceName": false},
+                  "showSparkline": {"showSparkline": false},
+                  "title": "Datacenter if not Virtualized",
+                  "valueSize": 24,
+                  "visualTheme": 8
+               },
+               "gridsterCoords": {
+                  "h": 5,
+                  "w": 4,
+                  "x": 1,
+                  "y": 4
+               },
+               "height": 267,
+               "id": "cc4322af-ead1-49fc-affe-e6195a7945ad",
+               "title": "Datacenter if not Virtualized",
+               "type": "Scoreboard"
+            },
+            {
+               "collapsed": false,
+               "config": {
+                  "boxColumns": 2,
+                  "boxHeight": null,
+                  "customFilter": {
+                     "excludedResources": null,
+                     "filter": [],
+                     "includedResources": null
+                  },
+                  "depth": 1,
+                  "labelSize": 12,
+                  "maxCellCount": 100,
+                  "metric": {
+                     "mode": "resourceKind",
+                     "resourceKindMetrics": [
+                        {
+                           "colorMethod": 1,
+                           "id": "extModel43047-1",
+                           "isStringMetric": false,
+                           "label": "Count of Physical Servers",
+                           "link": "",
+                           "metricKey": "summary|number_running_hosts",
+                           "metricName": "Summary|Number of Running Hosts",
+                           "metricUnitId": null,
+                           "orangeBound": null,
+                           "redBound": null,
+                           "resourceKindId": "resourceKind:id:0_::_",
+                           "resourceKindName": "vSphere World",
+                           "unit": "",
+                           "yellowBound": null
+                        },
+                        {
+                           "colorMethod": 1,
+                           "id": "extModel43047-2",
+                           "isStringMetric": false,
+                           "label": "Count of Virtual Machines",
+                           "link": "",
+                           "metricKey": "summary|number_running_vms",
+                           "metricName": "Summary|Number of Running VMs",
+                           "metricUnitId": null,
+                           "orangeBound": null,
+                           "redBound": null,
+                           "resourceKindId": "resourceKind:id:0_::_",
+                           "resourceKindName": "vSphere World",
+                           "unit": "",
+                           "yellowBound": null
+                        },
+                        {
+                           "colorMethod": 1,
+                           "id": "extModel43047-3",
+                           "isStringMetric": false,
+                           "label": "VMs per Physical Server",
+                           "link": "",
+                           "metricKey": "summary|vm_count_per_host",
+                           "metricName": "Summary|VM Count per Host",
+                           "metricUnitId": ":1",
+                           "orangeBound": null,
+                           "redBound": null,
+                           "resourceKindId": "resourceKind:id:0_::_",
+                           "resourceKindName": "vSphere World",
+                           "unit": ":1",
+                           "yellowBound": null
+                        },
+                        {
+                           "colorMethod": 1,
+                           "id": "extModel43047-4",
+                           "isStringMetric": false,
+                           "label": "Power Consumption",
+                           "link": "",
+                           "metricKey": "Super Metric|sm_9866dd87-f6c4-4b4e-a7e7-17b8ccce0ddb",
+                           "metricName": "Super Metrics|Sus-Power-with-VMW",
+                           "metricUnitId": "KW",
+                           "orangeBound": null,
+                           "redBound": null,
+                           "resourceKindId": "resourceKind:id:0_::_",
+                           "resourceKindName": "vSphere World",
+                           "unit": "KW",
+                           "yellowBound": null
+                        }
+                     ],
+                     "resourceMetrics": [],
+                     "subMode": "resourceKindAll"
+                  },
+                  "mode": {"layoutMode": "fixedView"},
+                  "oldMetricValues": false,
+                  "periodLength": null,
+                  "refreshContent": {"refreshContent": true},
+                  "refreshInterval": 300,
+                  "relationshipMode": {"relationshipMode": 0},
+                  "resInteractionMode": null,
+                  "resource": [],
+                  "roundDecimals": 0,
+                  "selfProvider": {"selfProvider": true},
+                  "showDT": {"showDT": false},
+                  "showMetricName": {"showMetricName": true},
+                  "showMetricUnit": {"showMetricUnit": true},
+                  "showResourceName": {"showResourceName": false},
+                  "showSparkline": {"showSparkline": false},
+                  "title": "Current Datacenter with VMware",
+                  "valueSize": 24,
+                  "visualTheme": 8
+               },
+               "gridsterCoords": {
+                  "h": 5,
+                  "w": 5,
+                  "x": 8,
+                  "y": 4
+               },
+               "height": 267,
+               "id": "76a48616-815f-4b44-8190-867473516b7e",
+               "title": "Current Datacenter with VMware",
+               "type": "Scoreboard"
+            },
+            {
+               "collapsed": false,
+               "config": {
+                  "boxColumns": 1,
+                  "boxHeight": null,
+                  "customFilter": {
+                     "excludedResources": null,
+                     "filter": [],
+                     "includedResources": null
+                  },
+                  "depth": 1,
+                  "labelSize": 12,
+                  "maxCellCount": 100,
+                  "metric": {
+                     "mode": "resourceKind",
+                     "resourceKindMetrics": [
+                        {
+                           "colorMethod": 1,
+                           "handleOldColoring": false,
+                           "id": "extModel24374-2",
+                           "isStringMetric": false,
+                           "label": "Power Savings with Virtualization",
+                           "link": "",
+                           "metricKey": "Super Metric|sm_71a9d099-1b78-4e7a-9855-42571d7f4811",
+                           "metricName": "Super Metrics|Sus-Power-savings%-with VMW",
+                           "metricUnitId": "%",
+                           "orangeBound": null,
+                           "redBound": null,
+                           "resourceKindId": "resourceKind:id:0_::_",
+                           "resourceKindName": "vSphere World",
+                           "unit": "%",
+                           "yellowBound": null
+                        },
+                        {
+                           "colorMethod": 1,
+                           "handleOldColoring": false,
+                           "id": "extModel50409-1",
+                           "isStringMetric": false,
+                           "label": "CO2 Emission avoided in a year",
+                           "link": "",
+                           "metricKey": "Super Metric|sm_e5e7dd50-03ed-4c41-8c5e-b8a4f5dd92e9",
+                           "metricName": "Super Metrics|CO2 Emission avoided in a year (Tonnes)",
+                           "metricUnitId": "Tonnes",
+                           "orangeBound": null,
+                           "redBound": null,
+                           "resourceKindId": "resourceKind:id:0_::_",
+                           "resourceKindName": "vSphere World",
+                           "unit": "Tonnes",
+                           "yellowBound": null
+                        }
+                     ],
+                     "resourceMetrics": [],
+                     "subMode": "resourceKindAll"
+                  },
+                  "mode": {"layoutMode": "fixedView"},
+                  "oldMetricValues": false,
+                  "periodLength": null,
+                  "refreshContent": {"refreshContent": false},
+                  "refreshInterval": 300,
+                  "relationshipMode": {"relationshipMode": 0},
+                  "resInteractionMode": null,
+                  "resource": [],
+                  "roundDecimals": 0,
+                  "selfProvider": {"selfProvider": true},
+                  "showDT": {"showDT": false},
+                  "showMetricName": {"showMetricName": true},
+                  "showMetricUnit": {"showMetricUnit": true},
+                  "showResourceName": {"showResourceName": false},
+                  "showSparkline": {"showSparkline": false},
+                  "title": "How much did you contribute  to a Greener planet?",
+                  "valueSize": 24,
+                  "visualTheme": 8
+               },
+               "gridsterCoords": {
+                  "h": 11,
+                  "w": 3,
+                  "x": 5,
+                  "y": 4
+               },
+               "height": 609,
+               "id": "aa4663bc-cc24-4d0d-bffe-d83b05ff0d99",
+               "title": "How much did you contribute  to a Greener planet?",
+               "type": "Scoreboard"
+            },
+            {
+               "collapsed": false,
+               "config": {
+                  "configs": [{
+                     "attributeKind": {"value": ""},
+                     "color": {"thresholds": {
+                        "colors": [
+                           "#00ff00",
+                           "#00ff00",
+                           "#888800",
+                           "#ff0000"
+                        ],
+                        "values": [
+                           0,
+                           70,
+                           100
+                        ]
+                     }},
+                     "colorBy": {
+                        "metricKey": "power|power_average",
+                        "value": "Power|Power (Watt)"
+                     },
+                     "focusOnGroups": false,
+                     "groupBy": {
+                        "id": "004null002006VMWAREClusterComputeResource",
+                        "parentId": "VMWARE",
+                        "parentText": "vCenter Adapter",
+                        "text": "Cluster Compute Resource",
+                        "type": "resourceKind",
+                        "typeId": "resourceKind:id:1_::_"
+                     },
+                     "mode": {"mode": false},
+                     "name": "Cluster Power Consumption Usage x count of VMs",
+                     "relationalGrouping": false,
+                     "resourceKind": "resourceKind:id:1_::_",
+                     "sizeBy": {
+                        "metricKey": "summary|number_running_vms",
+                        "value": "Summary|Number of Running VMs (Virtual Machines)"
+                     },
+                     "solidColoring": true,
+                     "tagFilter": null,
+                     "thenBy": null
+                  }],
+                  "refreshContent": {"refreshContent": true},
+                  "refreshInterval": 300,
+                  "title": "Heatmap for Power Usage by vSphere Clusters",
+                  "value": 0
+               },
+               "gridsterCoords": {
+                  "h": 6,
+                  "w": 4,
+                  "x": 1,
+                  "y": 9
+               },
+               "height": 323,
+               "id": "45b3b6ac-0a43-4d79-abcc-c1ba7c1e1736",
+               "states": [{
+                  "key": "perm_HeatMap_widget_76c77f4e-88f9-4607-89ba-4d041e284428_45b3b6ac-0a43-4d79-abcc-c1ba7c1e1736",
+                  "value": "o%3A"
+               }],
+               "title": "Heatmap for Power Usage by vSphere Clusters",
+               "type": "Heatmap"
+            },
+            {
+               "collapsed": false,
+               "config": {
+                  "chartViewItems": ["legend"],
+                  "isUpdatedView": true,
+                  "refreshContent": {"refreshContent": true},
+                  "refreshInterval": 300,
+                  "resource": {
+                     "id": "Ext.vcops.chrome.model.Resource-1",
+                     "resourceId": "resource:id:0_::_",
+                     "resourceKindId": "002006VMWAREvSphere World",
+                     "resourceName": "vSphere World",
+                     "traversalSpecId": "vSphere Hosts and Clusters-VMWARE-vSphere World"
+                  },
+                  "selectFirstRow": {"selectFirstRow": false},
+                  "selfProvider": {"selfProvider": true},
+                  "title": "Power Usage Trend by vSphere Cluster",
+                  "traversalSpecId": null,
+                  "viewDefinitionId": "6fd5de21-7658-4204-9b33-a73a0ea266d5"
+               },
+               "gridsterCoords": {
+                  "h": 6,
+                  "w": 5,
+                  "x": 8,
+                  "y": 9
+               },
+               "height": 324,
+               "id": "189f3a27-3be7-4e1f-bfde-75fa6f058bd6",
+               "states": [
+                  {
+                     "key": "perm_toolbarVisible_widget_76c77f4e-88f9-4607-89ba-4d041e284428_189f3a27-3be7-4e1f-bfde-75fa6f058bd6",
+                     "value": "b%3A1"
+                  },
+                  {
+                     "key": "permPageSize_widget_76c77f4e-88f9-4607-89ba-4d041e284428_189f3a27-3be7-4e1f-bfde-75fa6f058bd6",
+                     "value": "n%3A25"
+                  },
+                  {
+                     "key": "permSelectedDate_widget_76c77f4e-88f9-4607-89ba-4d041e284428_189f3a27-3be7-4e1f-bfde-75fa6f058bd6",
+                     "value": "s%3A%7B%22minType%22%3A%22.TimeIntervalControl%22%2C%22count%22%3A1%2C%22unit%22%3A%22DAYS%22%7D"
+                  }
+               ],
+               "title": "Power Usage Trend by vSphere Cluster",
+               "type": "View"
+            },
+            {
+               "collapsed": false,
+               "config": {
+                  "chartViewItems": [],
+                  "isUpdatedView": true,
+                  "refreshContent": {"refreshContent": false},
+                  "refreshInterval": 300,
+                  "resource": {
+                     "id": "Ext.vcops.chrome.model.Resource-24",
+                     "resourceId": "resource:id:0_::_",
+                     "resourceKindId": "002006VMWAREvSphere World",
+                     "resourceName": "vSphere World",
+                     "traversalSpecId": ""
+                  },
+                  "selectFirstRow": {"selectFirstRow": false},
+                  "selfProvider": {"selfProvider": true},
+                  "title": ".",
+                  "traversalSpecId": null,
+                  "viewDefinitionId": "b925f2b6-9b2d-4f38-ab4c-4627f8ead562"
+               },
+               "gridsterCoords": {
+                  "h": 3,
+                  "w": 12,
+                  "x": 1,
+                  "y": 1
+               },
+               "height": 153,
+               "id": "ef7dd579-3c1d-4c45-a1e7-488628eb0d9b",
+               "title": ".",
+               "type": "View"
+            }
+         ]
+      },
+      {
+         "autoswitchEnabled": false,
+         "columnCount": 1,
+         "columnProportion": "1-1",
+         "creationTime": 1613337224621,
+         "dashboardNavigations": {},
+         "description": "",
+         "disabled": false,
+         "gridsterMaxColumns": 12,
+         "hidden": false,
+         "homeTab": false,
+         "id": "73ecacd4-2785-46e2-918f-428d07b5432f",
+         "importAttempts": 0,
+         "importComplete": true,
+         "lastUpdateTime": 1613359459068,
+         "lastUpdateUserId": "f36c815d-9b04-439e-ad10-5e651353daff",
+         "locked": false,
+         "name": "Sustainability/Identify Green options to host workload",
+         "namePath": "Sustainability",
+         "rank": 0,
+         "shared": false,
+         "states": [],
+         "temporary": false,
+         "userId": "f36c815d-9b04-439e-ad10-5e651353daff",
+         "widgetInteractions": [
+            {
+               "type": "resourceId",
+               "widgetIdProvider": "d69fca04-3170-4cd8-985c-32f49177f56b",
+               "widgetIdReceiver": "e86d921b-982b-43d3-9a88-29a3b236ae95"
+            },
+            {
+               "type": "resourceId",
+               "widgetIdProvider": "d69fca04-3170-4cd8-985c-32f49177f56b",
+               "widgetIdReceiver": "e0bea32d-66ba-4ab8-b0c0-9ca434d2ee11"
+            }
+         ],
+         "widgets": [
+            {
+               "collapsed": false,
+               "config": {
+                  "additionalColumns": [],
+                  "barsCount": 10,
+                  "customFilter": {
+                     "excludedResources": null,
+                     "filter": [{
+                        "filterTypes": [{
+                           "condition": "GREATER_THAN",
+                           "filterType": "metrics",
+                           "metricKey": "power|power_average",
+                           "metricValue": {
+                              "isStringMetric": false,
+                              "value": 0
+                           }
+                        }],
+                        "resourceKind": "002006VMWAREClusterComputeResource"
+                     }],
+                     "includedResources": null
+                  },
+                  "depth": 10,
+                  "filterMode": "customFilter",
+                  "filterOldMetrics": {"filterOldMetrics": false},
+                  "metric": {
+                     "metricKey": "power|power_average",
+                     "name": "Power|Power (Watt)"
+                  },
+                  "metricName": "Power  Usage  in Watts",
+                  "metricUnit": {
+                     "metricUnitId": -1,
+                     "metricUnitName": "Auto"
+                  },
+                  "mode": "all",
+                  "orangeBound": 300,
+                  "percentileValue": null,
+                  "redBound": 400,
+                  "refreshContent": {"refreshContent": true},
+                  "refreshInterval": 300,
+                  "regenerationTime": 15,
+                  "relationshipMode": {"relationshipMode": [
+                     -1,
+                     0
+                  ]},
+                  "resource": [],
+                  "resourceKind": [{"id": "resourceKind:id:1_::_"}],
+                  "roundDecimals": 1,
+                  "selfProvider": {"selfProvider": true},
+                  "tagFilter": null,
+                  "title": "Green Clusters by Power usage",
+                  "topOption": "metricsLowestUtilization",
+                  "yellowBound": 200
+               },
+               "gridsterCoords": {
+                  "h": 6,
+                  "w": 4,
+                  "x": 1,
+                  "y": 1
+               },
+               "height": 324,
+               "id": "d69fca04-3170-4cd8-985c-32f49177f56b",
+               "title": "Green Clusters by Power usage",
+               "type": "ParetoAnalysis"
+            },
+            {
+               "collapsed": false,
+               "config": {
+                  "additionalColumns": [],
+                  "barsCount": 10,
+                  "customFilter": {
+                     "excludedResources": null,
+                     "filter": [{
+                        "filterTypes": [{
+                           "condition": "GREATER_THAN",
+                           "filterType": "metrics",
+                           "metricKey": "power|power_average",
+                           "metricValue": {
+                              "isStringMetric": false,
+                              "value": 0
+                           }
+                        }],
+                        "resourceKind": "002006VMWAREVirtualMachine"
+                     }],
+                     "includedResources": null
+                  },
+                  "depth": 10,
+                  "filterMode": "customFilter",
+                  "filterOldMetrics": {"filterOldMetrics": false},
+                  "metric": {
+                     "metricKey": "power|power_average",
+                     "name": "Power|Power (Watt)"
+                  },
+                  "metricName": "Power usage in Watts",
+                  "metricUnit": {
+                     "metricUnitId": -1,
+                     "metricUnitName": "Auto"
+                  },
+                  "mode": "all",
+                  "orangeBound": 300,
+                  "percentileValue": null,
+                  "redBound": 400,
+                  "refreshContent": {"refreshContent": true},
+                  "refreshInterval": 300,
+                  "regenerationTime": 15,
+                  "relationshipMode": {"relationshipMode": [
+                     -1,
+                     0
+                  ]},
+                  "resource": [],
+                  "resourceKind": [{"id": "resourceKind:id:2_::_"}],
+                  "roundDecimals": 1,
+                  "selfProvider": {"selfProvider": false},
+                  "tagFilter": null,
+                  "title": "Green VMs in the selected cluster by power usage",
+                  "topOption": "metricsLowestUtilization",
+                  "yellowBound": 200
+               },
+               "gridsterCoords": {
+                  "h": 6,
+                  "w": 4,
+                  "x": 9,
+                  "y": 1
+               },
+               "height": 324,
+               "id": "e86d921b-982b-43d3-9a88-29a3b236ae95",
+               "title": "Green VMs in the selected cluster by power usage",
+               "type": "ParetoAnalysis"
+            },
+            {
+               "collapsed": false,
+               "config": {
+                  "additionalColumns": [],
+                  "barsCount": 10,
+                  "customFilter": {
+                     "excludedResources": null,
+                     "filter": [{
+                        "filterTypes": [{
+                           "condition": "GREATER_THAN",
+                           "filterType": "metrics",
+                           "metricKey": "power|power_average",
+                           "metricValue": {
+                              "isStringMetric": false,
+                              "value": 0
+                           }
+                        }],
+                        "resourceKind": "002006VMWAREHostSystem"
+                     }],
+                     "includedResources": null
+                  },
+                  "depth": 10,
+                  "filterMode": "customFilter",
+                  "filterOldMetrics": {"filterOldMetrics": false},
+                  "metric": {
+                     "metricKey": "power|power_average",
+                     "name": "Power|Power (Watt)"
+                  },
+                  "metricName": "Power usage in Watts",
+                  "metricUnit": {
+                     "metricUnitId": -1,
+                     "metricUnitName": "Auto"
+                  },
+                  "mode": "all",
+                  "orangeBound": 250,
+                  "percentileValue": null,
+                  "redBound": 350,
+                  "refreshContent": {"refreshContent": true},
+                  "refreshInterval": 300,
+                  "regenerationTime": 15,
+                  "relationshipMode": {"relationshipMode": [
+                     -1,
+                     0
+                  ]},
+                  "resource": [],
+                  "resourceKind": [{"id": "resourceKind:id:3_::_"}],
+                  "roundDecimals": 1,
+                  "selfProvider": {"selfProvider": false},
+                  "tagFilter": null,
+                  "title": "Green Hosts in the selected cluster by Power usage",
+                  "topOption": "metricsLowestUtilization",
+                  "yellowBound": 150
+               },
+               "gridsterCoords": {
+                  "h": 6,
+                  "w": 4,
+                  "x": 5,
+                  "y": 1
+               },
+               "height": 324,
+               "id": "e0bea32d-66ba-4ab8-b0c0-9ca434d2ee11",
+               "title": "Green Hosts in the selected cluster by Power usage",
+               "type": "ParetoAnalysis"
+            },
+            {
+               "collapsed": false,
+               "config": {
+                  "customFilter": {
+                     "excludedResources": null,
+                     "filter": [{
+                        "filterTypes": [{
+                           "condition": "LESS_THAN",
+                           "filterType": "metrics",
+                           "metricKey": "power|power_average",
+                           "metricValue": {
+                              "isStringMetric": false,
+                              "value": 500
+                           }
+                        }],
+                        "resourceKind": "002006VMWAREClusterComputeResource"
+                     }],
+                     "includedResources": null
+                  },
+                  "filterMode": "tagPicker",
+                  "refreshContent": {"refreshContent": true},
+                  "refreshInterval": 300,
+                  "selfProvider": {"selfProvider": true},
+                  "tagFilter": {
+                     "path": ["/source/kind/kind:resourceKind:id:4_::_"],
+                     "value": {
+                        "adapterInstance": [],
+                        "adapterKind": [],
+                        "bus": [],
+                        "collector": [],
+                        "day": [],
+                        "exclaim": false,
+                        "healthRange": [],
+                        "kind": ["resourceKind:id:4_::_"],
+                        "maintenanceSchedule": [],
+                        "state": [],
+                        "status": [],
+                        "tag": [],
+                        "tier": []
+                     }
+                  },
+                  "title": "Which is the most Green datacenter?"
+               },
+               "gridsterCoords": {
+                  "h": 6,
+                  "w": 7,
+                  "x": 1,
+                  "y": 7
+               },
+               "height": 323,
+               "id": "127746f2-3460-4447-8d78-051e6e1eecc1",
+               "title": "Which is the most Green datacenter?",
+               "type": "Geo"
+            },
+            {
+               "collapsed": false,
+               "config": {
+                  "additionalColumns": [],
+                  "barsCount": 5,
+                  "customFilter": {
+                     "excludedResources": null,
+                     "filter": [{
+                        "filterTypes": [{
+                           "condition": "GREATER_THAN",
+                           "filterType": "metrics",
+                           "metricKey": "Super Metric|sm_a5dc01a7-600f-4ea0-9f41-5702a836b3cd",
+                           "metricValue": {
+                              "isStringMetric": false,
+                              "value": 0
+                           }
+                        }],
+                        "resourceKind": "002009ContainerFunction"
+                     }],
+                     "includedResources": null
+                  },
+                  "depth": 10,
+                  "filterMode": "customFilter",
+                  "filterOldMetrics": {"filterOldMetrics": false},
+                  "metric": {
+                     "metricKey": "Super Metric|sm_a5dc01a7-600f-4ea0-9f41-5702a836b3cd",
+                     "name": "Super Metrics|Sus-Avg Power Consumption of Hosts"
+                  },
+                  "metricName": "Average Power consumption (Watts)",
+                  "metricUnit": {
+                     "metricUnitId": -1,
+                     "metricUnitName": "Auto"
+                  },
+                  "mode": "all",
+                  "orangeBound": 130,
+                  "percentileValue": null,
+                  "redBound": 150,
+                  "refreshContent": {"refreshContent": true},
+                  "refreshInterval": 300,
+                  "regenerationTime": 15,
+                  "relationshipMode": {"relationshipMode": [
+                     -1,
+                     0
+                  ]},
+                  "resource": [],
+                  "resourceKind": [{"id": "resourceKind:id:5_::_"}],
+                  "roundDecimals": 1,
+                  "selfProvider": {"selfProvider": true},
+                  "tagFilter": null,
+                  "title": "Which is the most Green Host by Model?",
+                  "topOption": "metricsLowestUtilization",
+                  "yellowBound": 100
+               },
+               "gridsterCoords": {
+                  "h": 6,
+                  "w": 5,
+                  "x": 8,
+                  "y": 7
+               },
+               "height": 324,
+               "id": "f207aec3-1729-4a69-ae61-a7b8a4880e19",
+               "title": "Which is the most Green Host by Model?",
+               "type": "ParetoAnalysis"
+            }
+         ]
+      }
+   ],
+   "entries": {
+      "resource": [{
+         "adapterKindKey": "VMWARE",
+         "identifiers": [],
+         "internalId": "resource:id:0_::_",
+         "name": "vSphere World",
+         "resourceKindKey": "vSphere World"
+      }],
+      "resourceKind": [
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:3_::_",
+            "resourceKindKey": "HostSystem"
+         },
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:4_::_",
+            "resourceKindKey": "Datacenter"
+         },
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:2_::_",
+            "resourceKindKey": "VirtualMachine"
+         },
+         {
+            "adapterKindKey": "Container",
+            "internalId": "resourceKind:id:5_::_",
+            "resourceKindKey": "Function"
+         },
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:1_::_",
+            "resourceKindKey": "ClusterComputeResource"
+         },
+         {
+            "adapterKindKey": "VMWARE",
+            "internalId": "resourceKind:id:0_::_",
+            "resourceKindKey": "vSphere World"
+         }
+      ]
+   },
+   "uuid": "9244cd4f-2678-4d99-8142-c054f4fb7f72"
+}

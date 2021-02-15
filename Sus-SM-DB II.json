@@ -1,0 +1,62 @@
+{
+   "e5e7dd50-03ed-4c41-8c5e-b8a4f5dd92e9": {
+      "resourceKinds": [{
+         "resourceKindKey": "vSphere World",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1612773368616,
+      "name": "Sus-CO2 Emission avoided in a year (Tonnes)",
+      "formula": "(${this, metric=Super Metric|sm_db72701d-7018-4147-8de2-6fb3985e934c, depth=1} - ${this, metric=Super Metric|sm_9be5b3c8-c1ba-4b53-a21a-40d48c87467f, depth=1})*365/1000",
+      "description": "",
+      "unitId": "",
+      "modifiedBy": "3b03efe1-04b1-4e97-8b77-96e7f23277dc"
+   },
+   "9866dd87-f6c4-4b4e-a7e7-17b8ccce0ddb": {
+      "resourceKinds": [{
+         "resourceKindKey": "vSphere World",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1612773368628,
+      "name": "Sus-Power-with-VMW",
+      "formula": "${this, metric=summary|number_running_hosts, depth=1}*0.5",
+      "description": "",
+      "unitId": "",
+      "modifiedBy": "3b03efe1-04b1-4e97-8b77-96e7f23277dc"
+   },
+   "71a9d099-1b78-4e7a-9855-42571d7f4811": {
+      "resourceKinds": [{
+         "resourceKindKey": "vSphere World",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1612773368636,
+      "name": "Sus-Power-savings%-with VMW",
+      "formula": "((${this, metric=Super Metric|sm_6f2ca6b4-6952-4a66-93d5-35f8d78d9237, depth=1})-(${this, metric=Super Metric|sm_9866dd87-f6c4-4b4e-a7e7-17b8ccce0ddb, depth=1}))/(${this, metric=Super Metric|sm_6f2ca6b4-6952-4a66-93d5-35f8d78d9237, depth=1})*100",
+      "description": "",
+      "unitId": "",
+      "modifiedBy": "3b03efe1-04b1-4e97-8b77-96e7f23277dc"
+   },
+   "6f2ca6b4-6952-4a66-93d5-35f8d78d9237": {
+      "resourceKinds": [{
+         "resourceKindKey": "vSphere World",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1612773368644,
+      "name": "Sus-Power-without-VMW",
+      "formula": "${this, metric=summary|number_running_vms, depth=1}*0.3",
+      "description": "",
+      "unitId": "",
+      "modifiedBy": "3b03efe1-04b1-4e97-8b77-96e7f23277dc"
+   },
+   "a5dc01a7-600f-4ea0-9f41-5702a836b3cd": {
+      "resourceKinds": [{
+         "resourceKindKey": "Function",
+         "adapterKindKey": "Container"
+      }],
+      "modificationTime": 1612774411307,
+      "name": "Sus-Avg Power Consumption of Hosts",
+      "formula": "avg(${adaptertype=VMWARE, objecttype=HostSystem, metric=power|power_average, depth=5})",
+      "description": "Avg Power Consumption of Hosts",
+      "unitId": "",
+      "modifiedBy": "3b03efe1-04b1-4e97-8b77-96e7f23277dc"
+   }
+}
